@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Baby!</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+        }
+        h1 {
+            display: inline-block;
+        }
+        img {
+            width: 100px; 
+            vertical-align: middle;
+        }
+        nav {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+       
+        .kids-categories {
+            display: none;
+            text-align: center;
+        }
+        .kids-categories img {
+            width: 150px;
+            margin: 10px;
+        }
+        .top-selling {
+            display: none;
+            text-align: center;
+            background-color: pink; 
+        }
+        
+       
+        .section {
+            text-align: center;
+            margin: 20px auto; 
+            padding: 20px;
+            background-color: Lightblue; 
+            box-shadow: 0px 0px 5px 0px #ddd; 
+            color: white; 
+        }
+        
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto; 
+            max-width: 800px; 
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 200px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   
+    <div class="header">
+        <h1>Hi Baby!</h1>
+        <img src="th (3).jpeg" height="70" width="60" alt="Baby Image">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" onclick="toggleKidsCategories()">Kids</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="kids-categories" id="kidsCategories">
+        <h2>Top Categories for Kids</h2>
+        <img src="dress1.jpeg" alt="Kids Dress 1">
+        <img src="dress2.jpeg" alt="Kids Dress 2">
+        <img src="dress3.jpeg" alt="Kids Dress 3">
+        <img src="dress4.jpeg" alt="Kids Dress 3">
+        <img src="dress5.jpeg" alt="Kids Dress 3">
+        <img src="dress6.jpeg" alt="Kids Dress 3">
+        <img src="dress7.jpeg" alt="Kids Dress 3">
+    </div>
+    <div class="top-selling" id="topSelling">
+        <h2>Top Selling</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress1.jpeg" alt="Product 1">
+                        <p><strong>Product Name:</strong> Kids Dress 1</p>
+                        <p><strong>Product Description:</strong> A beautiful dress for kids.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <!-- Add more products here -->
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress2.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress1.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress3.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // Set the direction to horizontal
+            slidesPerView: 'auto', // Auto-adjust the number of slides per view
+            slidesPerView: 5, // Display five products in one slide
+            spaceBetween: 20, // Adjust the space between slides
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000, // Autoplay with a 3-second delay between slides
+            },
+        });
+    </script>
+    
+    <div class="section" id="allProducts">
+        <h2>ALL Products</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress1.jpeg" alt="Product 1">
+                        <p><strong>Product Name:</strong> Kids Dress 1</p>
+                        <p><strong>Product Description:</strong> A beautiful dress for kids.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <!-- Add more products here -->
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress4.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress2.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress1.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="dress3.jpeg" alt="Product 2">
+                        <p><strong>Product Name:</strong> Kids Dress 2</p>
+                        <p><strong>Product Description:</strong> Comfortable and stylish dress.</p>
+                        <p><strong>Rate:</strong> $50</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // Set the direction to horizontal
+            slidesPerView: 'auto', // Auto-adjust the number of slides per view
+            slidesPerView: 5, // Display five products in one slide
+            spaceBetween: 20, // Adjust the space between slides
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000, // Autoplay with a 3-second delay between slides
+            },
+        });
+    </script>
+    
+  
+
+    <script>
+        function toggleKidsCategories() {
+            var kidsCategories = document.getElementById("kidsCategories");
+            var topSelling = document.getElementById("topSelling");
+            if (kidsCategories.style.display === "none" || kidsCategories.style.display === "") {
+                kidsCategories.style.display = "block";
+                topSelling.style.display = "block";
+            } else {
+                kidsCategories.style.display = "none";
+                topSelling.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
